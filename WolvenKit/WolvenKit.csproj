@@ -396,11 +396,18 @@
       <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CR2WImportExportWPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CR2WImportExportWPF.Designer.cs">
+      <DependentUpon>CR2WImportExportWPF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\DDSUtility.cs" />
     <Compile Include="discord.cs" />
     <Compile Include="Extensions\CustomFloatWindow.cs">
@@ -729,6 +736,9 @@
     <EmbeddedResource Include="FlowTreeEditors\Scene\SceneLinkEditor.resx">
       <DependentUpon>SceneLinkEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CR2WImportExportWPF.resx">
+      <DependentUpon>CR2WImportExportWPF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -951,6 +961,10 @@
     <ProjectReference Include="..\WolvenKit.Save\WolvenKit.Save.csproj">
       <Project>{9c026da7-481d-43c6-8c18-635d69fdb423}</Project>
       <Name>WolvenKit.Save</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WolvenKit.WpfControlLibrary\WolvenKit.WpfControlLibrary.csproj">
+      <Project>{cd3d2939-14d8-4fc6-9d15-a5d7214580cd}</Project>
+      <Name>WolvenKit.WpfControlLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\WolvenKit.Wwise\WolvenKit.Wwise.csproj">
       <Project>{dcbbe807-cd6e-493e-8c04-db976a1591ea}</Project>

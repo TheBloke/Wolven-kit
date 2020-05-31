@@ -54,7 +54,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolvenKit.Console", "Wolven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolvenKit.App", "WolvenKit.App\WolvenKit.App.csproj", "{6C5EE693-7F88-4259-90D5-9B247E61A15A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolvenKit.WpfControlLibrary", "WolvenKit.WpfControlLibrary\WolvenKit.WpfControlLibrary\WolvenKit.WpfControlLibrary.csproj", "{CD3D2939-14D8-4FC6-9D15-A5D7214580CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolvenKit.WpfControlLibrary", "WolvenKit.WpfControlLibrary\WolvenKit.WpfControlLibrary.csproj", "{CD3D2939-14D8-4FC6-9D15-A5D7214580CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

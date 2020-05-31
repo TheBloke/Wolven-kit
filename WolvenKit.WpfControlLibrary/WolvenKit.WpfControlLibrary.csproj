@@ -105,8 +105,26 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CR2WImportExport\CR2WImportExportView.xaml.cs">
+      <DependentUpon>CR2WImportExportView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -146,35 +164,40 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WolvenKit.App\WolvenKit.App.csproj">
+    <ProjectReference Include="..\WolvenKit.App\WolvenKit.App.csproj">
       <Project>{6c5ee693-7f88-4259-90d5-9b247e61a15a}</Project>
       <Name>WolvenKit.App</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WolvenKit.Bundles\WolvenKit.Bundles.csproj">
+    <ProjectReference Include="..\WolvenKit.Bundles\WolvenKit.Bundles.csproj">
       <Project>{5bd2292a-24db-4b4a-a5b1-5d435769c289}</Project>
       <Name>WolvenKit.Bundles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WolvenKit.Cache\WolvenKit.Cache.csproj">
+    <ProjectReference Include="..\WolvenKit.Cache\WolvenKit.Cache.csproj">
       <Project>{17cf5901-6e1f-467f-afe0-3cc04dc9688a}</Project>
       <Name>WolvenKit.Cache</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WolvenKit.Common\WolvenKit.Common.csproj">
+    <ProjectReference Include="..\WolvenKit.Common\WolvenKit.Common.csproj">
       <Project>{4d1019f1-f099-450f-85b8-697e0332a94f}</Project>
       <Name>WolvenKit.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WolvenKit.CR2W\WolvenKit.CR2W.csproj">
+    <ProjectReference Include="..\WolvenKit.CR2W\WolvenKit.CR2W.csproj">
       <Project>{f3129e02-31ad-4327-a9ef-7c52d777c71f}</Project>
       <Name>WolvenKit.CR2W</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WolvenKit.Wwise\WolvenKit.Wwise.csproj">
+    <ProjectReference Include="..\WolvenKit.Wwise\WolvenKit.Wwise.csproj">
       <Project>{dcbbe807-cd6e-493e-8c04-db976a1591ea}</Project>
       <Name>WolvenKit.Wwise</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CR2WImportExport\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CR2WImportExport\CR2WImportExportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
