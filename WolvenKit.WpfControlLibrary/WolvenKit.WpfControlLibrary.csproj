@@ -54,37 +54,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\ControlzEx.4.3.0\lib\net462\ControlzEx.dll</HintPath>
+      <HintPath>..\packages\ControlzEx.4.3.0\lib\net462\ControlzEx.dll</HintPath>
     </Reference>
     <Reference Include="Fluent, Version=7.0.0.0, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Fluent.Ribbon.7.1.0\lib\net462\Fluent.dll</HintPath>
+      <HintPath>..\packages\Fluent.Ribbon.7.1.0\lib\net462\Fluent.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Converters.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=b532964b8548be77, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Converters.Wpf.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Converters.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=7407205e337c98ef, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Core.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Core.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Css, Version=1.6.0.0, Culture=neutral, PublicKeyToken=7a46e3f532fdb787, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Css.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Css.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Dom, Version=1.6.0.0, Culture=neutral, PublicKeyToken=517340b6277b1a7a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Dom.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Dom.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Model, Version=1.6.0.0, Culture=neutral, PublicKeyToken=2236cfc76b505845, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Model.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Model.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Rendering.Gdi, Version=1.6.0.0, Culture=neutral, PublicKeyToken=03902092284347e3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Rendering.Gdi.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Rendering.Gdi.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Rendering.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=d0902381100df30e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Rendering.Wpf.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Rendering.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="SharpVectors.Runtime.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=d16e717f0a981fb9, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Runtime.Wpf.dll</HintPath>
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net48\SharpVectors.Runtime.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -106,19 +106,19 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="WindowsFormsIntegration" />
     <Reference Include="Xceed.Wpf.AvalonDock, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
     </Reference>
     <Reference Include="Xceed.Wpf.Toolkit, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
