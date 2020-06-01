@@ -5,21 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:local="clr-namespace:WolvenKit.WpfControlLibrary.CR2WImportExport"
-             mc:Ignorable="d" Height="880" Width="780">
+             mc:Ignorable="d" Width="780" Height="880">
     <Grid Background="LightGray" >
         <TabControl HorizontalAlignment="Left" Height="417" Margin="23,17,0,0" VerticalAlignment="Top" Width="736">
             <TabItem Header="Export">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="txtHelp" HorizontalAlignment="Left" Height="63" Margin="17,10,0,0" Text="" VerticalAlignment="Top" Width="698" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled" TextWrapping="Wrap"/>
                     <Label Content="Source folder:" HorizontalAlignment="Left" Margin="34,85,0,0" VerticalAlignment="Top" FontSize="10"/>
-                    <TextBox x:Name="txtSourcePath" Height="23" Margin="118,184,104,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"/>
-                    <Button x:Name="btnSource" Content="Select Source" HorizontalAlignment="Left" Margin="640,85,0,0" VerticalAlignment="Top" Width="75" FontSize="10" Height="23"/>
+                    <TextBox x:Name="txtSourcePath" Text="{Binding SourcePath}" Height="18" Margin="118,85,104,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"/>
+                    <Button x:Name="btnSource" Content="Select Source" Command="{Binding SetSourcePath}" HorizontalAlignment="Left" Margin="640,85,0,0" VerticalAlignment="Top" Width="75" FontSize="10" Height="23"/>
                     <Label Content="Output file mode:" HorizontalAlignment="Left" Margin="17,132,0,0" VerticalAlignment="Top" FontSize="10"/>
-                    <RadioButton x:Name="radOutputSeparate" Content="Single file" HorizontalAlignment="Left" Margin="118,148,0,0" VerticalAlignment="Top" FontSize="10"/>
-                    <RadioButton x:Name="radOutputSingle" Content="One file per source file" HorizontalAlignment="Left" Margin="118,128,0,0" VerticalAlignment="Top" FontSize="10"/>
+                    <RadioButton x:Name="radOutputSeparate" IsChecked="{Binding RadOutputSeparate}" Content="Single file" HorizontalAlignment="Left" Margin="118,148,0,0" VerticalAlignment="Top" FontSize="10"/>
+                    <RadioButton x:Name="radOutputSingle" IsChecked="{Binding RadOutputSingle}" Content="One file per source file" HorizontalAlignment="Left" Margin="118,128,0,0" VerticalAlignment="Top" FontSize="10"/>
                     <Label Content="Number of threads:" HorizontalAlignment="Left" Margin="323,132,0,0" VerticalAlignment="Top" FontSize="10"/>
                     <Label Content="Output results to:" HorizontalAlignment="Left" Margin="17,184,0,0" VerticalAlignment="Top" FontSize="10"/>
-                    <TextBox x:Name="txtOutput" Height="23" Margin="118,85,104,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"/>
+                    <TextBox x:Name="txtOutput" Height="18" Margin="118,184,104,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10"/>
                     <Button x:Name="btnOutput" Content="Set Output" HorizontalAlignment="Left" Margin="640,184,0,0" VerticalAlignment="Top" Width="75" FontSize="10" Height="23"/>
                     <Label Content="Dump options:" HorizontalAlignment="Left" Margin="30,258,0,0" VerticalAlignment="Top" FontSize="10"/>
                     <CheckBox x:Name="chkCreateFolders" Content="Create intermediate folders" HorizontalAlignment="Left" Margin="118,226,0,0" VerticalAlignment="Top" IsChecked="" FontSize="10"/>
@@ -30,14 +30,14 @@
                     <Label Content="File overwriting:" HorizontalAlignment="Left" Margin="25,351,0,0" VerticalAlignment="Top" FontSize="10" RenderTransformOrigin="0.5,0.5"/>
                     <RadioButton x:Name="radExistingOverwrite" Content="Overwrite existing files" HorizontalAlignment="Left" Margin="118,347,0,0" VerticalAlignment="Top" FontSize="10"/>
                     <RadioButton x:Name="radExistingSkip" Content="Skip existing files" HorizontalAlignment="Left" Margin="118,367,0,0" VerticalAlignment="Top" FontSize="10"/>
-                    <xctk:IntegerUpDown x:Name="intNumThreads" HorizontalAlignment="Left" Height="13" Margin="440,142,0,0" VerticalAlignment="Top" Width="115"/>
+                    <xctk:IntegerUpDown x:Name="intNumThreads" HorizontalAlignment="Left" Height="17" Margin="420,132,0,0" VerticalAlignment="Top" Width="50"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Import">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <Button x:Name="btnRun" Content="" HorizontalAlignment="Left" Margin="162,443,0,0" VerticalAlignment="Top" Width="478"/>
+        <Button x:Name="btnRun" Content="{Binding RunButtonText}" HorizontalAlignment="Left" Margin="162,443,0,0" VerticalAlignment="Top" Width="478" Height="21"/>
         <DataGrid x:Name="dataStatus" HorizontalAlignment="Left" Height="43" Margin="162,479,0,0" VerticalAlignment="Top" Width="478"/>
         <TextBox x:Name="txtConsole" HorizontalAlignment="Left" Height="316" Margin="23,545,0,0" Text="" VerticalAlignment="Top" Width="736" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True"/>
 

@@ -137,6 +137,7 @@ namespace WolvenKit
             this.visualStudioToolStripExtender1 = new WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender(this.components);
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.MainBackgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.cR2WToTextNEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolbarToolStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusToolStrip.SuspendLayout();
@@ -671,6 +672,7 @@ namespace WolvenKit
             this.dumpFileToolStripMenuItem,
             this.renderW2meshToolStripMenuItem,
             this.cR2WToTextToolStripMenuItem,
+            this.cR2WToTextNEWToolStripMenuItem,
             this.experimentalToolStripMenuItem,
             this.verifyFileToolStripMenuItem,
             this.toolStripSeparator5,
@@ -740,7 +742,7 @@ namespace WolvenKit
             // 
             this.cR2WToTextToolStripMenuItem.Image = global::WolvenKit.Properties.Resources.TextFileIcon64px;
             this.cR2WToTextToolStripMenuItem.Name = "cR2WToTextToolStripMenuItem";
-            this.cR2WToTextToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.cR2WToTextToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.cR2WToTextToolStripMenuItem.Text = "CR2W To Text";
             this.cR2WToTextToolStripMenuItem.Click += new System.EventHandler(this.cR2WToTextToolStripMenuItem_Click);
             // 
@@ -1052,6 +1054,13 @@ namespace WolvenKit
             this.toolStripContainer1.TabIndex = 14;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
+            // cR2WToTextNEWToolStripMenuItem
+            // 
+            this.cR2WToTextNEWToolStripMenuItem.Name = "cR2WToTextNEWToolStripMenuItem";
+            this.cR2WToTextNEWToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.cR2WToTextNEWToolStripMenuItem.Text = "CR2W To Text NEW";
+            this.cR2WToTextNEWToolStripMenuItem.Click += new System.EventHandler(this.cR2WToTextNEWToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1192,5 +1201,6 @@ namespace WolvenKit
         private ToolStripButton toolStripButtonRadishUtil;
         private ToolStripMenuItem MenuLabelProject;
         private ToolStripMenuItem cR2WToTextToolStripMenuItem;
+        private ToolStripMenuItem cR2WToTextNEWToolStripMenuItem;
     }
 }

@@ -21,8 +21,9 @@ namespace WolvenKit.Forms
         private CR2WImportExportControl wpfcontrol;
         private IViewModel viewModel;
 
-        public CR2WImportExportWPF()
+        public CR2WImportExportWPF(IViewModel viewmodel)
         {
+            viewModel = viewmodel;
             InitializeComponent();
         }
 

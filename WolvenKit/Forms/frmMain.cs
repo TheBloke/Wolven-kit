@@ -19,6 +19,7 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using WeifenLuo.WinFormsUI.Docking;
 using WolvenKit.Wwise.Wwise;
+using WolvenKit.App.ViewModels;
 using SearchOption = System.IO.SearchOption;
 
 
@@ -2490,6 +2491,17 @@ _col - for simple stuff like boxes and spheres","Information about importing mod
         {
             var fctt = new frmCR2WtoText();
             fctt.ShowDialog();
+        }
+        private void cR2WToTextNEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var vm = new CR2WImportExportViewModel();
+            var cr2wexport = new CR2WImportExportWPF(vm);
+            //Point location = dockPanel.Location;
+            //location.X += (dockPanel.Size.Width / 2 - cr2wexport.Size.Width / 2);
+            //location.Y += (dockPanel.Size.Height / 2 - cr2wexport.Size.Height / 2);
+            //Rectangle floatWindowBounds = new Rectangle() { Location=location, Width = cr2wexport.Width, Height = cr2wexport.Height };
+            //cr2wexport.Show(dockPanel, floatWindowBounds);
+            cr2wexport.Show();
         }
 
         private void RecordStepsToReproduceBugToolStripMenuItem_Click(object sender, EventArgs e)
